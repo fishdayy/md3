@@ -9,20 +9,9 @@ const onMyBirthday = (isKayoSick) => {
         }, 2000);
     })
 }
-// onMyBirthday(false)
-//     .then((result) => {
-//         console.log(`I have ${result} cakes`);
-//     })
-//     .catch((error) => {
-//         console.log(error)
-//     })
-//     .finally(() => {
-//         console.log("Party");
-//     })
-
-onMyBirthday(true)
+onMyBirthday(false)
     .then((result) => {
-        console.log(`I have ${result} cakes`)
+        console.log(`I have ${result} cakes`);
     })
     .catch((error) => {
         console.log(error)
@@ -30,3 +19,14 @@ onMyBirthday(true)
     .finally(() => {
         console.log("Party");
     })
+
+// onMyBirthday(true)
+//     .then((result) => {
+//         console.log(`I have ${result} cakes`)
+//     })
+//     .catch((error) => {
+//         console.log(error)
+//     })
+//     .finally(() => {
+//         console.log("Party");
+//     })
