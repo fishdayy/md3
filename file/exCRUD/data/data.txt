@@ -1,17 +1,2 @@
-[
-  {
-    "id": 1,
-    "name": "iphone 11",
-    "price": 20000
-  },
-  {
-    "id": 2,
-    "name": "iphone 12",
-    "price": 30000
-  },
-  {
-    "id": 3,
-    "name": "Samsung Note 21",
-    "price": 40000
-  }
-]
+[{"id":"1","name":"tuananh1","price":"1"},{"id":"1","name":"1","price":"1"},{"id":"2","name":"2","price":"2"},{"id":"1","name":"1","price":"1"},
+{"id":"1","name":"1","price":"1"},{"id":"","name":"","price":""}]
