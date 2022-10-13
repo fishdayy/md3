@@ -1,2 +1,1 @@
-[{"id":"1","name":"tuananh1","price":"1"},{"id":"1","name":"1","price":"1"},{"id":"2","name":"2","price":"2"},{"id":"1","name":"1","price":"1"},
-{"id":"1","name":"1","price":"1"},{"id":"","name":"","price":""}]
+[{"name":"tuananh1","price":"12"}]
