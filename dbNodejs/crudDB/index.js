@@ -14,16 +14,22 @@ connection.connect(function (err) {
     }
     else {
         console.log("connect success");
-        const sqlInsert = "INSERT INTO customer (name, address) VALUES ('Ngô Ngọc Bằng', 'Hà Nội')";
-        connection.query(sqlInsert, function (err, result) {
+        const sqlCreate = "CREATE TABLE IF NOT EXISTS products (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), price INT)";
+        connection.query(sqlCreate, function (err, result) {
             if (err) throw err;
-            console.log("1 record inserted");
+            console.log("Create table success");
         });
 
-        const sqlUpdate = "UPDATE customer SET address = 'Hải Dương' WHERE name = 'hung'";
-        connection.query(sqlUpdate, function (err, result) {
+        const sqlDrop = "DROP TABLE IF EXISTS products";
+        connection.query(sqlDrop, function (err, result) {
             if (err) throw err;
-            console.log(result.affectedRows + " record(s) updated");
+            console.log("Drop table success");
+        });
+
+        const sqlAlter = "ALTER TABLE customer ADD COLUMN age INT DEFAULT 30";
+        connection.query(sqlAlter, function (err, result) {
+            if (err) throw err;
+            console.log("Alter table success");
         });
     }
 });
